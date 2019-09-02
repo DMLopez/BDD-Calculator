@@ -2,16 +2,11 @@ const assert = require('assert');
 const { Given, When, Then } = require('cucumber');
 
 Given('I have number {int} in calculator', function (int) {
-    // Write code here that turns the phrase above into concrete actions
-    return 'pending';
+    this.setTo(int);
 });
-
 When('I entered number {int}', function (int) {
-    // Write code here that turns the phrase above into concrete actions
-    return 'pending';
+    this.incrementBy(int);
 });
-
 Then('I should see result {int}', function (int) {
-    // Write code here that turns the phrase above into concrete actions
-    return 'pending';
+    assert.equal(this.variable, parseInt(int));
 });
