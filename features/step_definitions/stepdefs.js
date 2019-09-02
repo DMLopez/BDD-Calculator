@@ -50,5 +50,8 @@ Given('El usuario quiere obtener la raiz de {int}', function (int) {
         this.raiz();
     });
     Then('El resultado de raiz será {float}', function (float) {
-        assert.equal(this.variable1, parseFloat(float));
+        assert.equal(this.resultado, parseFloat(float));
+    });
+    Then('El resultado de raiz será {int}', function (int) {
+        assert.equal(this.resultado, parseInt(int));
     });
