@@ -1,12 +1,26 @@
 const assert = require('assert');
 const { Given, When, Then } = require('cucumber');
 
-Given('I have number {int} in calculator', function (int) {
-    this.setTo(int);
-});
-When('I entered number {int}', function (int) {
-    this.incrementBy(int);
-});
-Then('I should see result {int}', function (int) {
-    assert.equal(this.variable, parseInt(int));
-});
+
+Given('El usuario quiere sumar {int} y {int}', function (int, int2) {
+    this.asignarOperandosSuma(int,int2);
+  });
+  When('El usuario ejecuta sumar', function () {
+    this.sumar();
+  });
+  Then('El resultado de sumar será {int}', function (int) {
+    assert.equal(this.variable1, parseInt(int));
+  });
+
+Given('El usuario quiere restar {int} y {int}', function (int, int2) {
+      // Write code here that turns the phrase above into concrete actions
+      return 'pending';
+    });
+    When('El usuario ejecuta restar', function () {
+      // Write code here that turns the phrase above into concrete actions
+      return 'pending';
+    });
+    Then('El resultado de restar será {int}', function (int) {
+      // Write code here that turns the phrase above into concrete actions
+      return 'pending';
+    });
