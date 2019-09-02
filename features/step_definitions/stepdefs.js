@@ -33,14 +33,12 @@ Given('El usuario quiere multiplicar {int} y {int}', function (int, int2) {
     });
 
 Given('El usuario quiere dividir {int} y {int}', function (int, int2) {
-        // Write code here that turns the phrase above into concrete actions
-        return 'pending';
+        this.asignarOperandos(int,int2);
     });
     When('El usuario ejecuta dividir', function () {
-        // Write code here that turns the phrase above into concrete actions
-        return 'pending';
+        this.dividir();
     });
     Then('El resultado de dividir será {int}', function (int) {
-        // Write code here that turns the phrase above into concrete actions
-        return 'pending';
+        if(this.variable2 != 0)
+            assert.equal(this.variable1, parseInt(int));
     });

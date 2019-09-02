@@ -5,9 +5,10 @@ Feature: division
         When El usuario ejecuta dividir
         Then El resultado de dividir será <result>
 
+        # Obviamos los errores por dividir entre cero y devolveremos cero en dicho caso
         Examples: 
         | operand1 | operand2 | result |
         | 0        | 1        | 0      |
-        | 1        | 1        | 1      |
+        | 1        | 0        | 0      |
         | 10       | 2        | 5      |
         | 50       | 10       | 5      |

@@ -22,6 +22,10 @@ class CustomWorld {
     this.variable1 *= this.variable2;
     this.restulado = this.variable1;
   }
+  dividir() {
+    this.variable1 = this.variable1 / this.variable2;
+    this.restulado = this.variable1;
+  }
 }
 
 setWorldConstructor(CustomWorld);
