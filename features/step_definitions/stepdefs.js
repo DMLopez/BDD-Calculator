@@ -42,3 +42,13 @@ Given('El usuario quiere dividir {int} y {int}', function (int, int2) {
         if(this.variable2 != 0)
             assert.equal(this.variable1, parseInt(int));
     });
+
+Given('El usuario quiere obtener la raiz de {int}', function (int) {
+        this.asignarOperandos(int,0);
+    });
+    When('El usuario ejecuta raiz', function () {
+        this.raiz();
+    });
+    Then('El resultado de raiz será {float}', function (float) {
+        assert.equal(this.variable1, parseFloat(float));
+    });
