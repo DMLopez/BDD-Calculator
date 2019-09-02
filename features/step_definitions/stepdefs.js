@@ -21,3 +21,16 @@ Given('El usuario quiere restar {int} y {int}', function (int, int2) {
     Then('El resultado de restar será {int}', function (int) {
         assert.equal(this.variable1, parseInt(int));
     });
+
+Given('El usuario quiere multiplicar {int} y {int}', function (int, int2) {
+    // Write code here that turns the phrase above into concrete actions
+    return 'pending';
+    });
+    When('El usuario ejecuta multiplicar', function () {
+    // Write code here that turns the phrase above into concrete actions
+    return 'pending';
+    });      
+    Then('El resultado de multiplicar será {int}', function (int) {
+    // Write code here that turns the phrase above into concrete actions
+    return 'pending';
+    });
